@@ -45,7 +45,7 @@
 			events: ["work", "touched tree", "pizza", "running", "coding"]
 		};
 		console.log(day1.squirrel);
-		// false	
+		// 	false	
 		console.log(day1.wolf);
 		// undefined	
 		day1.wolf = false;
@@ -109,9 +109,9 @@ var object3 = {
 	value: 10
 };
 
-console.log(object1 == object2);
+console.log(object1 === object2);
 // true
-console.log(object1 == object3);
+console.log(object1 === object3);
 // false
 
 object1.value = 15;
