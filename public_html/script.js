@@ -52,9 +52,22 @@
 		};
 		return output;
 	};
-	function reverseArrayInPlace() {
 
+	// 4.2 reversing an array in place
+	function reverseArrayInPlace(arr) {
+		for(var i = 0; i < Math.floor(arr.length / 2); i++) {
+			var old = arr[i];
+			arr[i] = arr[arr.length - 1 - i];
+			arr[arr.length - 1 - i] = old;
+		}
+		return arr;
 	};
+
 	console.log(reverseArray(["A", "B", "C"]));
-	//
+	// [ 'C', 'B', 'A' ]
+	var arrVal = [1, 2, 3, 4, 5, 6, 7];
+	reverseArrayInPlace(arrVal);
+	console.log(arrVal);
+	// [ 7, 6, 5, 4, 3, 2, 1 ]
+
 }());
