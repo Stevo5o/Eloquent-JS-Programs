@@ -20,16 +20,14 @@
 		}
 		var arr = [];
 
-		if(step > 0) {
-			for(vari = start; i <= end; i += step)
-			{
+		if (step > 0) {
+			for (var i = start; i <= end; i += step) {
 				arr.push(i);
 			}
 		} else {
-			for(var i = start; i >= end; i += step)
-			{
+			for (var i = start; i >= end; i += step) {
 				arr.push(i);
-			}			
+			}
 		}
 		return arr;
 	};
@@ -42,4 +40,21 @@
 		return total;
 	};
 	console.log(sum(range(1, 10)));
+	// 55
+	console.log(range(5, 2, -1));
+	// [ 5, 4, 3, 2 ]
+
+	// 4.2 reversing an array
+	function reverseArray(arr) {
+		var output = [];
+		for (var i = arr.length - 1; i >= 0; i--) {
+			output.push(arr[i]);
+		};
+		return output;
+	};
+	function reverseArrayInPlace() {
+
+	};
+	console.log(reverseArray(["A", "B", "C"]));
+	//
 }());
