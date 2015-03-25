@@ -3,7 +3,7 @@ Programs from the Eloquent JavaScript epub
 - Chapter 1 complete
 - Chapter 2 complete
 - Chapter 3 complete
-- Chapter 4
+- Chapter 4 complete
 - Chapter 5
 - Chapter 6
 - Chapter 7
