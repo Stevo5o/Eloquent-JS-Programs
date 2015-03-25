@@ -55,7 +55,7 @@
 
 	// 4.2 reversing an array in place
 	function reverseArrayInPlace(arr) {
-		for(var i = 0; i < Math.floor(arr.length / 2); i++) {
+		for (var i = 0; i < Math.floor(arr.length / 2); i++) {
 			var old = arr[i];
 			arr[i] = arr[arr.length - 1 - i];
 			arr[arr.length - 1 - i] = old;
@@ -74,31 +74,35 @@
 	function arrayToList(array) {
 		var list = null;
 		for (var i = array.length - 1; i >= 0; i--) {
-			list = {value: array[i], rest: list}
+			list = {
+				value: array[i],
+				rest: list
+			}
 		}
-		return list;		
+		return list;
 	};
 
 	function listToArray(list) {
 		var array = [];
-		for(var node = list; node; node = node.rest) {
+		for (var node = list; node; node = node.rest) {
 			array.push(node.value);
 		}
 		return array;
 	}
 
 	function prepend(value, list) {
-		return {value: value, rest: list};
+		return {
+			value: value,
+			rest: list
+		};
 	}
 
 	function nth(list, n) {
-		if(!list) {
+		if (!list) {
 			return undefined;
-		}
-		else if (n == 0) {
+		} else if (n == 0) {
 			return list.value;
-		}
-		else {
+		} else {
 			return nth(list.rest, n - 1)
 		}
 	}
@@ -111,4 +115,36 @@
 	// { value: 10, rest: { value: 20, rest: null } }
 	console.log(nth(arrayToList([10, 20, 30]), 1));
 	// 20
+
+	// 4.4 deep comparison
+	function deepEqual(a, b) {
+		if (a === b) {
+			return true;
+		}
+		if (a == null || typeof a != "object" ||
+			b == null || typeof b != "object") {
+			return false;
+		}
+		var propsInA = 0,
+			propsInB = 0;
+
+		for (var prop in a) {
+			propsInA += 1;
+		}
+		for (var prop in b) {
+			propsInB += 1;
+			if (!(prop in a) || !deepEqual(a[prop], b[prop])) {
+				return false;
+			}
+		}
+		return propsInA == propsInB;
+	}
+
+	var obj = {here: {is: "an"}, object: 2};
+	console.log(deepEqual(obj, obj));
+	// true
+	console.log(deepEqual(obj, {here: 1, object: 2}));
+	// false
+	console.log(deepEqual(obj, {here: {is: "an"}, object: 2}));
+	// true
 }());
