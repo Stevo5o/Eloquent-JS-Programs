@@ -1,5 +1,8 @@
-# Eloquent-JS-Programs
-Programs from the Eloquent JavaScript epub
+
+
+![](http://eloquentjavascript.net/img/cover.png)
+
+Programs from the Eloquent JavaScript
 - Chapter 1 complete
 - Chapter 2 complete
 - Chapter 3 complete
@@ -14,3 +17,6 @@ Programs from the Eloquent JavaScript epub
 - Chapter 12
 - Chapter 13
 - Chapter 14
+
+Resourses
+[Eloquent JavaScript](http://eloquentjavascript.net/)
