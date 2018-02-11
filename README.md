@@ -1,12 +1,17 @@
 
 
-![](http://eloquentjavascript.net/img/cover.png)
+:boom: Time to start again :rocket:
 
-Programs from the Eloquent JavaScript
-- Chapter 1 complete
-- Chapter 2 complete
-- Chapter 3 complete
-- Chapter 4 complete
+When I start reading a chapter I will create a link to that chapter below.
+
+![](https://eloquentjavascript.net/3rd_edition/img/cover.jpg)
+
+Programs from the Eloquent JavaScript 3rd edition:
+- [Intro](https://eloquentjavascript.net/3rd_edition/00_intro.html)
+- Chapter 1 
+- Chapter 2 
+- Chapter 3 
+- Chapter 4 
 - Chapter 5
 - Chapter 6
 - Chapter 7
