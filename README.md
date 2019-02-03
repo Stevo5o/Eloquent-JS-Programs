@@ -8,8 +8,8 @@ When I start reading a chapter I will create a link to that chapter below.
 
 Programs from the Eloquent JavaScript 3rd edition:
 - [Intro](https://eloquentjavascript.net/3rd_edition/00_intro.html)
-- Chapter 1 
-- Chapter 2 
+- [Chapter 1](https://eloquentjavascript.net/01_values.html)
+- [Chapter 2](https://eloquentjavascript.net/02_program_structure.html)
 - Chapter 3 
 - Chapter 4 
 - Chapter 5
